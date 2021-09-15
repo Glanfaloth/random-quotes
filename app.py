@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from flask import Flask, flash, redirect, render_template, request, session, abort
 from random import randint
 
