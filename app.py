@@ -5,10 +5,6 @@ from random import randint
 app = Flask(__name__)
 
 @app.route("/")
-def index():
-    return "Flask App!"
-
-@app.route("/randomquote/")
 def quote():
     quotes = [
 
