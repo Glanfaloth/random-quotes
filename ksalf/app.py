@@ -152,10 +152,26 @@ def quote():
 {
        "quote":"なんていうか…その…下品なんですが…フフ…boki…しちゃいましてね…","author":"吉良吉影"}
 ]
-    randomNumber = randint(0,len(quotes)-1)
-    quote = quotes[randomNumber]["quote"]
-    author = quotes[randomNumber]["author"]
-    return render_template('test.html', **locals())
+    colors = [
+  "#16a085",
+  "#27ae60",
+  "#2c3e50",
+  "#f39c12",
+  "#e74c3c",
+  "#9b59b6",
+  "#FB6964",
+  "#342224",
+  "#472E32",
+  "#BDBB99",
+  "#77B1A9",
+  "#73A857"
+]
+    randomNumber1 = randint(0,len(quotes)-1)
+    randomNumber2 = randint(0,len(colors)-1)
+    quote = quotes[randomNumber1]["quote"]
+    author = quotes[randomNumber1]["author"]
+    color = colors[randomNumber2]
+    return render_template('layout.html', **locals())
 
 if __name__ == "__main__":
     app.run()
