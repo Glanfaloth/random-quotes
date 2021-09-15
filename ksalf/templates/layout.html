@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Website</title>
+<title>JOJO's Bizarre Quotes</title>
 
 <head>
 
@@ -102,7 +102,7 @@
             font-weight: normal;
             color: white;
             font-size: 2.5em;
-
+            text-align: center;
         }
     </style>
 </head>
@@ -116,11 +116,13 @@
             </div>
             <div class="quote-author">- <span id="author">{{author}}</span></div>
             <div class="buttons">
-                <button class="button" id="new-quote">New Quote</button>
+                <a href="{{url_for('quote')}}"><button class="button" id="new-quote">New Quote</button></a>
             </div>
         </div>
-        <img src="http://www.naturalprogramming.com/images/smilingpython.gif">
+        <img src="">
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
 
 </html>
